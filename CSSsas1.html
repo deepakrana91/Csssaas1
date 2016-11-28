@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>css bubble box</title>
+        <style>
+        .bubble 
+{
+position: relative;
+width: 275px;
+height: 120px;
+padding: 0px;
+background: #77FFFF;
+-webkit-border-radius: 31px;
+-moz-border-radius: 31px;
+border-radius: 31px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 20px 15px 20px 0;
+border-color: transparent #77FFFF;
+display: block;
+width: 0;
+z-index: 1;
+left: -15px;
+top: 33px;
+}
+
+.insidebubble {
+    position:absolute;
+    left: 30px;
+    top:40px;
+    font-size: 20px;
+
+}
+        </style>
+    </head>
+    <body>
+        <div class="bubble">
+            <div class="insidebubble">this is a buble</div>
+        </div>
+    </body>
+</html>
+        
